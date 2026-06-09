@@ -1,0 +1,57 @@
+dataset_version: sample-v1
+agent: sample-ticket-classifier
+results:
+  - case_id: cls-001
+    agent: sample-ticket-classifier
+    passed: true
+    scores:
+      l1:
+        format_compliance: 1.0
+        required_field_completeness: 1.0
+      l2:
+        classification_accuracy: 1.0
+      l3:
+        route_blocking_compliance: 1.0
+    errors: []
+    evidence: "Predicted billing with required JSON fields."
+  - case_id: cls-002
+    agent: sample-ticket-classifier
+    passed: true
+    scores:
+      l1:
+        format_compliance: 1.0
+        required_field_completeness: 1.0
+      l2:
+        classification_accuracy: 1.0
+      l3:
+        route_blocking_compliance: 1.0
+    errors: []
+    evidence: "Predicted technical for an app crash issue."
+  - case_id: cls-003
+    agent: sample-ticket-classifier
+    passed: true
+    scores:
+      l1:
+        format_compliance: 1.0
+        required_field_completeness: 1.0
+      l2:
+        classification_accuracy: 1.0
+      l3:
+        route_blocking_compliance: 1.0
+    errors: []
+    evidence: "Predicted account for password reset failure."
+  - case_id: cls-004
+    agent: sample-ticket-classifier
+    passed: false
+    scores:
+      l1:
+        format_compliance: 1.0
+        required_field_completeness: 1.0
+      l2:
+        classification_accuracy: 0.0
+      l3:
+        route_blocking_compliance: 0.0
+    errors:
+      - wrong_classification
+      - business_rule_violation
+    evidence: "Predicted technical, but the expected category was other for a sales/security inquiry."

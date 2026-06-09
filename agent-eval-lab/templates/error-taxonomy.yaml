@@ -1,0 +1,10 @@
+error_categories:
+  - parse_error
+  - format_violation
+  - missing_field
+  - wrong_classification
+  - incomplete_extraction
+  - hallucination
+  - tool_call_failure
+  - business_rule_violation
+  - judge_uncertain

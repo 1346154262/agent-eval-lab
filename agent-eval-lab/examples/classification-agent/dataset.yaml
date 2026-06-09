@@ -1,0 +1,30 @@
+version: sample-v1
+cases:
+  - id: cls-001
+    input: "I was charged twice for my subscription this month."
+    expected:
+      category: billing
+    metrics: [format_compliance, required_field_completeness, classification_accuracy]
+    difficulty: easy
+    boundary: common_billing
+  - id: cls-002
+    input: "The app crashes whenever I upload a CSV file."
+    expected:
+      category: technical
+    metrics: [format_compliance, required_field_completeness, classification_accuracy]
+    difficulty: easy
+    boundary: common_technical
+  - id: cls-003
+    input: "I cannot reset my password because the email never arrives."
+    expected:
+      category: account
+    metrics: [format_compliance, required_field_completeness, classification_accuracy]
+    difficulty: medium
+    boundary: account_access
+  - id: cls-004
+    input: "Can you tell me more about your enterprise plan and data retention?"
+    expected:
+      category: other
+    metrics: [format_compliance, required_field_completeness, classification_accuracy]
+    difficulty: hard
+    boundary: ambiguous_sales_security

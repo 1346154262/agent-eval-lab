@@ -1,0 +1,11 @@
+required_result_fields:
+  - case_id
+  - agent
+  - passed
+  - scores
+  - errors
+  - evidence
+score_groups:
+  - l1
+  - l2
+  - l3

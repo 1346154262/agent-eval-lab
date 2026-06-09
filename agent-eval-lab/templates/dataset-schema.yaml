@@ -1,0 +1,11 @@
+required_case_fields:
+  - id
+  - input
+  - expected
+  - metrics
+  - difficulty
+  - boundary
+allowed_difficulty:
+  - easy
+  - medium
+  - hard
