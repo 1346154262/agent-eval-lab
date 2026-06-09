@@ -1,0 +1,3 @@
+display_name: Agent Eval Lab
+short_description: Build Harness-style evaluations for business agents.
+default_prompt: Use this skill to design an evaluation harness for a tested agent, including the evaluation plan, golden dataset, evaluator prompt, metrics, result schema, and report.
