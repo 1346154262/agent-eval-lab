@@ -1,5 +1,7 @@
 # Agent Eval Lab
 
+English | [简体中文](README.zh-CN.md)
+
 Agent Eval Lab is a Harness-style evaluation lab for business agents. It uses a strong coding agent, such as Codex or ClaudeCode, as the Harness Builder that designs evaluation plans, creates golden datasets, writes evaluator prompts, summarizes results, and recommends improvements.
 
 The core idea is to move fast-changing business evaluation logic out of scattered scripts and into prompts, rubrics, schemas, and reusable templates. Python scripts in this repository stay narrow: they validate datasets and summarize recorded results.
