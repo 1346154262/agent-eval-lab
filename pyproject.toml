@@ -1,0 +1,16 @@
+[project]
+name = "agent-eval-lab"
+version = "0.1.0"
+description = "Harness-style agent evaluation skill and lightweight lab"
+requires-python = ">=3.10"
+dependencies = [
+  "PyYAML>=6.0.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
